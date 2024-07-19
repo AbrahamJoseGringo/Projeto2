@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CategoriaView from "../views/CategoriaView.vue";
+import EditoraView from "../views/EditoraView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
 
@@ -16,6 +17,11 @@ const router = createRouter({
       path: "/categorias",
       name: "categorias",
       component: CategoriaView,
+    },
+    { 
+      path:"/editoras",
+      name:"editoras",
+      component: EditoraView,
     },
     {
       path: "/login",
